@@ -6,6 +6,9 @@ A Supa Image Recognition Machine that be able to detect a hot dog and not hot do
 # Demo
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/ACmydtFDTGs/0.jpg)](https://www.youtube.com/watch?v=ACmydtFDTGs)
 
+# Real Demo
+https://i.imgur.com/mfDfHPj.gifv
+
 # Powered by
 * CoreML
 * Inception-v3 Model
