@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qQw-SS-amX">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="seeFood" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hotDoge" translatesAutoresizingMaskIntoConstraints="NO" id="cvs-ht-lv3">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cvs-ht-lv3" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Prh-t5-Phk"/>
+                            <constraint firstItem="cvs-ht-lv3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="XcB-zf-gN2"/>
+                            <constraint firstItem="cvs-ht-lv3" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="csf-xQ-o4x"/>
+                            <constraint firstItem="cvs-ht-lv3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pyE-1f-oOz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="DIC-dX-EUU">
+                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="5KQ-WC-DVD">
+                            <connections>
+                                <action selector="cameraTapped:" destination="BYZ-38-t0r" id="CSw-qA-rtr"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="cameraButton" destination="5KQ-WC-DVD" id="jfh-Yz-5f4"/>
+                        <outlet property="imageView" destination="cvs-ht-lv3" id="MHA-E5-Mmc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1172" y="39.130434782608695"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="HJb-4x-YHx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qQw-SS-amX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="onQ-KS-dzA">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="KLX-Le-TIe"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rh5-lX-yha" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="292.80000000000001" y="40.479760119940032"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="hotDoge" width="375" height="603"/>
+    </resources>
+</document>
